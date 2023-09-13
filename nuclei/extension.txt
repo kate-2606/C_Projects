@@ -1,0 +1,28 @@
+
+---------------------------------- EXTENSION -----------------------------------
+
+  When developing a piece of code, finding syntaxic and sematic errors
+  (especially in long pieces of code) is much easier when when the compiler
+  highlights where in the code has triggered an error.
+
+  Therefore, in this parser and interpreter program, when running a file using
+  "make extension" and "./extension example_file.ncl" if there is an error with
+  the example_file code, a detailed error message displays in the terminal,
+  indicating the point of failure.
+
+  An example of the detailed error message:
+  [Filename]:[Line]:[Offset]: NUCLEI error: expected two LIST inputs in SET
+    (SET A "Example Error")
+                         ^
+  The error message includes:
+   - Filename
+   - Line number
+   - Character offset
+   - Description of error
+   - The line of code in error
+   - A caret (^) pointer to the point of error detection.
+
+  The error message is coloured and formatted in the style of a terminal
+  complier error messages.
+
+For example: use with literal_parsepass_interpfail.ncl from blackboard.
