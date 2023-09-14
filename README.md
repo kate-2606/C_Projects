@@ -1,6 +1,6 @@
 # C_Projects
 
-This repo contains the following functional programming in C assignments I completed during university:
+This repo contains the following Programming in C assignments I completed during university:
 
 1) **BinGrid** - Solves binary grid puzzles from grids input as strings. Puzzle examples can be found at [binarypuzzle.com](https://www.binarypuzzle.com/).
 
