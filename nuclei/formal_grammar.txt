@@ -1,0 +1,27 @@
+# (N)eill’s (U)n(C)ommon (L)isp (E)xpression (I)nterpreter
+
+<PROG> ::= "(" <INSTRCTS>
+
+<INSTRCTS> ::= <INSTRCT> <INSTRCTS> | ")"
+
+<INSTRCT> ::= "(" <FUNC> ")"
+
+<FUNC> ::= <RETFUNC> | <IOFUNC> | <IF> | <LOOP>
+
+<RETFUNC> ::= <LISTFUNC> | <INTFUNC> | <BOOLFUNC>
+
+<LISTFUNC> ::= "CAR" <LIST> | "CDR" <LIST> | "CONS" <LIST> <LIST>
+
+<INTFUNC> ::= "PLUS" <LIST> <LIST> | "LENGTH" <LIST>
+
+<BOOLFUNC> ::= "LESS" <LIST> <LIST> | "GREATER" <LIST> <LIST> | "EQUAL" <LIST> <LIST>
+
+<IOFUNC> ::= <SET> | <PRINT>
+
+<SET> ::= "SET" <VAR> <LIST>
+
+<PRINT> ::= "PRINT" <LIST> | "PRINT" <STRING>
+
+# (IF (CONDITION) ((IF-TRUE-INSTRCTS)) ((IF_FALSE_INSTRCTS)))
+
+<IF> ::= "IF" "(" <BOOLFUNC> ")" "(" <INSTRCTS> "(" <INSTRCTS>

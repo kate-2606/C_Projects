@@ -8,5 +8,4 @@ This repo contains the following functional programming in C assignments I compl
 
 3) **Lisp** - Creates, manipulates and performs various operations on [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) data strucutres using linked list and string representations.
 
-4) **Nuclei** - Tokenises, parses and interprets Lisp language inputs based on a custom formal grammar. 
-
+4) **Nuclei** - Tokenises, parses and interprets Lisp language inputs based on a custom formal grammar.
